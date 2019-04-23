@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "listitem": "/components/Listitem/listitem",
+    "dialog": "/components/Dialog/dialog"
+  }
 }

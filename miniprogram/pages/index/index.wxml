@@ -5,8 +5,44 @@
   </view>
   <view class='content'>
     <view class='search'>
-      <input type='text' placeholder='请输入搜索条件'></input>
-      <button></button>
+      <input type='text' placeholder='请输入搜索条件' class='search-input'></input>
+      <button class='iconfont icon-xiazai17 search-button'></button>
     </view>
   </view>
+  <view class='main'>
+    <view class='main-left'>
+      <picker mode="selector" value="1" class='picker' range="{{selectData}}" value="{{index}}">选择分类</picker>
+    </view>
+    <view class='main-right'>
+      <scroll-view scroll-y="true" class='scroll-view'>
+      <view class='margin-right-item'>
+        <listitem id="listitem" bindtap="showDialog"></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+        <listitem></listitem>
+      </view>
+    </scroll-view>
+    </view>
+  </view>
+  <dialog id='dialog' 
+      title='产品型号' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='返回' 
+      confirm='加入购物车'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+    </dialog>
 </view>

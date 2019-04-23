@@ -1,0 +1,10 @@
+/* components/listitem/listitem.html.wxss */
+.list-item{
+  width:55px;
+  padding:7px;
+  font-size: 7px;
+}
+.item-image{
+  width:55px;
+  height:55px;
+}

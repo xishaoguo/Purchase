@@ -1,0 +1,18 @@
+<!--components/listitem/listitem.html.wxml-->
+<view class='list-item'>
+  <image src='../../images/yuyu.jpg' class='item-image'></image>
+  <view>
+    <view>
+      <text>品牌：</text>
+      <text>{{brand}}</text>
+    </view>
+    <view>
+      <text>规格：</text>
+      <text>{{specifications}}</text>
+    </view>
+    <view>
+      <text>说明：</text>
+      <text>{{explain}}</text>
+    </view>
+  </view>
+</view>

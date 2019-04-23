@@ -1,0 +1,25 @@
+<!--components/Dialog/dialog.wxml-->
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <image src='../../images/yuyu.jpg' class='dialog-img'></image>
+        <view class='wx-dialog-content'>
+          <view>
+            <text>品牌：</text>
+            <text>{{brand}}</text>
+          </view>
+          <view>
+            <text>规格：</text>
+            <text>{{specifications}}</text>
+          </view>
+          <view>
+            <text>说明：</text>
+            <text>{{explain}}</text>
+          </view>
+        </view>
+        <view class='wx-dialog-footer'>
+          <view class='wx-dialog-btn' catchtap='_cancelEvent'>{{ cancelText }}</view>
+          <view class='wx-dialog-btn' catchtap='_confirmEvent'>{{ confirmText }}</view>
+        </view>
+    </view>
+</view>
