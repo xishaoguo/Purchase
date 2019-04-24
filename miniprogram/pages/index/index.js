@@ -28,6 +28,7 @@ Page({
     // 获取用户信息
     wx.getSetting({
       success: res => {
+        console.log("获取信息")
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
@@ -40,7 +41,22 @@ Page({
           })
         }
       }
-    })
+    }),
+      wx.login({
+        success(res) {
+          if (res.code) {
+            // 发起网络请求
+            wx.request({
+              url: 'http://192.168.1.90:8080/HuiYi/servlet/WeiXinLogin',
+              data: {
+                code: res.code
+              }
+            })
+          } else {
+            console.log('登录失败！' + res.errMsg)
+          }
+        }
+      })
   },
 
   onGetUserInfo: function(e) {

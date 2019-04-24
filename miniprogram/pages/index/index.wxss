@@ -67,6 +67,8 @@ page {
   border-radius:3px;
   margin-top:20px;
   padding:5px;
+  text-align: center;
+  line-height: 20px;
 }
 .main-right {
   width:80%;
@@ -77,7 +79,7 @@ page {
   flex-wrap:wrap;
 }
 .scroll-view{
- height:300px;
+ height:400px;
 }
 .footer{
   width:100%;
@@ -111,5 +113,5 @@ page {
   padding-left:10px;
 }
 .shopping-scrol{
-  height:120px;
+  height:200px;
 }
