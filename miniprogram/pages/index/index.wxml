@@ -3,7 +3,8 @@
   <view class='rotation-chart'>
     <image src='../../images/yuyu.jpg'></image>
   </view>
-  <view class='content'>
+  <view hidden='{{switchType}}' class='content-main'>
+    <view class='content'>
     <view class='search'>
       <input type='text' placeholder='请输入搜索条件' class='search-input'></input>
       <button class='iconfont icon-xiazai17 search-button'></button>
@@ -37,9 +38,42 @@
     </scroll-view>
     </view>
   </view>
+  </view>
+  <view class='content2' hidden='{{!switchType}}'>
+    <view class='shopping-title'>购物车</view>
+    <view class='shopping-item'>
+      <scroll-view scroll-y="true" class='shopping-scrol'>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+        <shoppingcart></shoppingcart>
+      </scroll-view>
+    </view>
+    <view class='shopping-title'>已购订单</view>
+    <view class='shopping-item'>
+      <scroll-view scroll-y="true" class='shopping-scrol'>
+        <order></order>
+        <order></order>
+        <order></order>
+        <order></order>
+        <order></order>
+        <order></order>
+        <order></order>
+        <order></order>
+      </scroll-view>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='iconfont icon-weibiaoti35 product-information' bindtap='selectTab1'>{{productInformation}}</view>
+    <view class='iconfont icon-gerenzhongxin personal-center' bindtap='selectTab2'>{{personalCenter}}</view>
+  </view>
   <dialog id='dialog' 
       title='产品型号' 
-      content='恭喜你，学会了小程序组件' 
+      content='' 
       cancelText='返回' 
       confirm='加入购物车'
       bind:cancelEvent="_cancelEvent"  

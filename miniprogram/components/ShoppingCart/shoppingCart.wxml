@@ -1,0 +1,13 @@
+<!--components/ShoppingCart/shoppingCart.wxml-->
+<view class='shopping'>
+  <image src='../../images/yuyu.jpg' class='shopping-image'></image>
+  <view class='shopping-text'>
+    <view>品牌：111</view>
+    <view>规格：111</view>
+    <view>说明：111</view>
+  </view>
+  <view class='shopping-amount'>
+    ×2
+  </view>
+  <button class='delete-shopping'>删除</button>
+</view>

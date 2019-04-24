@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "listitem": "/components/Listitem/listitem",
-    "dialog": "/components/Dialog/dialog"
+    "dialog": "/components/Dialog/dialog",
+    "shoppingcart":"/components/ShoppingCart/shoppingCart",
+    "order":"/components/Order/order"
   }
 }

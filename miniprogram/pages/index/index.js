@@ -8,6 +8,9 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
+    productInformation:'产品信息',
+    personalCenter:'个人中心',
+    switchType:false,
     selectData:[
       "分类1",
       "分类2"
@@ -68,5 +71,15 @@ Page({
   //确认事件
   _confirmEvent() {
     this.dialog.hideDialog();
+  },
+  selectTab1: function () {
+    this.setData({
+      switchType: false
+    })
+  },
+  selectTab2: function () {
+    this.setData({
+      switchType: true
+    })
   }
 })
